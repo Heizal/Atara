@@ -65,7 +65,7 @@ const Home = () => {
               <div className="output">
                 <div className="output-header-container">
                   <div className="output-header">
-                    <h3>Answer</h3>
+                    <h3>Here ya go!</h3>
                   </div>
                 </div>
                 {/* Display the output here using apiOutput as called above */}
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://climate-operation.webflow.io/"
           target="_blank"
           rel="noreferrer"
         >

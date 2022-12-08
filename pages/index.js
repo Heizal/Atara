@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import headerImage from '../assets/creativity.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -44,6 +45,11 @@ const Home = () => {
           <div className="header-subtitle">
             <h2>Ask a question about the climate crisis, Atara will do the rest!</h2>
           </div>
+          {/* Add header image here */}
+
+          {/* <div className="icon-one">
+            <Image src={headerImage} alt="header image" className='space-ship' />
+          </div> */}
           {/* Add text area*/}
           <div className="prompt-container">
             <textarea 
@@ -65,7 +71,7 @@ const Home = () => {
               <div className="output">
                 <div className="output-header-container">
                   <div className="output-header">
-                    <h3>Here ya go!</h3>
+                    <h3>Answer</h3>
                   </div>
                 </div>
                 {/* Display the output here using apiOutput as called above */}

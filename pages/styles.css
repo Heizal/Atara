@@ -10,7 +10,8 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(to right, #3e5151, #decba4);
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -61,10 +62,24 @@ body {
 .header-subtitle h2 {
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    color: white;
+    
 }
+
+/* .icon-one{
+    position: absolute;
+}
+
+.space-ship{
+    position: relative;
+    right: 400px;
+    height: 100px;
+    width: 100px;
+
+} */
 
 .prompt-container {
     place-content: flex-end center;
@@ -80,14 +95,15 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    /* border-color: rgba(255, 255, 255, 0.1); */
+    border-color: transparent;
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.571);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -108,7 +124,8 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    /* color: rgba(255, 255, 255, 0.75); */
+    color: black;
     text-decoration: none;
     text-transform: none;
 }
@@ -172,7 +189,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(108, 213, 187);
+    background-color: rgba(97, 154, 140, 0.867);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -198,7 +215,9 @@ textarea {
 }
 
 .generate p {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: black;
+    font-weight: 550;
     margin: 0;
 }
 
@@ -221,11 +240,15 @@ textarea {
 .badge-container a {
     border-bottom-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
+    border: transparent;
+    /* border-color: linear-gradient(to right, #3e5151, #decba4);; */
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(97, 154, 140, 0.867);
+    /* background: linear-gradient(to right, #3e5151, #decba4); */
     border-radius: 54.3478% / 238.095%;
     filter: grayscale(1);
     transform: none;
@@ -235,6 +258,7 @@ textarea {
     letter-spacing: -0.5px;
     line-height: 1em;
     color: #fff;
+    /* color: black; */
     padding: 12px;
     text-decoration: none;
 }
@@ -304,11 +328,11 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: black;
     text-decoration: none;
     text-transform: none;
     margin: 0;
-    margin-top: 10px;
 }
 
 .output-content {
@@ -325,7 +349,8 @@ textarea {
     margin-top: -10px;
     text-align: justify;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: black;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
@@ -341,6 +366,14 @@ textarea {
 
     .prompt-box {
         width: 100%;
+    }
+
+    .output-header h3{
+        font-size: 50px;
+    }
+
+    .output-content p{
+        font-size: 20px;
     }
 }
 
@@ -390,6 +423,28 @@ textarea {
     .prompt-box {
         width: 100%;
     }
+}
+
+@media (max-width: 480px){
+    .prompt-container {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .prompt-box {
+        width: 80%;
+    }
+
+    .container {
+        max-width: 400px;
+        width: 80%;
+    }
+
+    .header-title h1 {
+        font-size: 40px;
+        letter-spacing: 0.1px;
+    }
+
 }
 
 

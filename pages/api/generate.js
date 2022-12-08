@@ -12,8 +12,6 @@ const openai = new OpenAIApi(configuration);
 const basePromptPrefix = 
 `
 Answer my climate related question in Paul Graham style. Please make sure the answer is not too scientific, well researched and is applicable to my question.
-
-Question:
 `
 const generateAction = async (req, res) => {
   // Run first prompt

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
-import headerImage from '../assets/creativity.png';
+// import buildspaceLogo from '../assets/buildspace-logo.png';
+// import headerImage from '../assets/creativity.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -53,7 +53,7 @@ const Home = () => {
           {/* Add text area*/}
           <div className="prompt-container">
             <textarea 
-              placeholder="Ask Atara you're question" className="prompt-box" 
+              placeholder="Ask Atara your question" className="prompt-box" 
               value = {userInput}
               onChange = {onUserChangedText} 
             />

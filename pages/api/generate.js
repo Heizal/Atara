@@ -26,6 +26,12 @@ const generateAction = async (req, res) => {
   
   const basePromptOutput = baseCompletion.data.choices.pop();
 
+  // Make the call to the moderation endpoint
+
+  // const res = await openai.createModeration({
+  //   input: body?.message,
+  // });
+
   // // build prompt two
   // const secondPrompt =
   // `

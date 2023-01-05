@@ -11,7 +11,7 @@ body {
     place-content: center flex-start;
     align-items: center;
     /* background-color: rgb(0, 0, 0); */
-    background: linear-gradient(to right, #3e5151, #decba4);
+    background: linear-gradient(to right, #fffbd5, #FF7F50); 
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
